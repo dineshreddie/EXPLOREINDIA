@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|OPen+Sans:400,800&display=swap');
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}body{
+    width: 100%;
+    background-image:url("taj4.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex; 
+}
+.menubar
+{
+    user-select: none;
+position:absolute;
+text-align:center; 
+margin-left:65%;
+margin-top: 20px;
+justify-content: center;
+height: 40px;
+}
+.menubar ul
+{
+display:inline-flex;
+list-style:none;
+font-size: 18px;
+}
+.menubar ul li
+{
+ cursor:pointer;
+ padding:10px;
+ font-family:monospace;
+ font-weight: bold;
+ text-shadow: 0 0 10px rgb(238, 197, 197),
+              0 0 20px rgb(148, 140, 140);
+}
+.menubar ul li a
+{
+    color: black;
+text-decoration:none;
+letter-spacing: 2px;
+}
+.menubar ul li a:hover{
+    color:white;   
+    padding-top: 5px;
+    text-shadow: 0 0 10px rgb(15, 8, 8),
+                 0 0 20px rgb(12, 11, 11);
+}
+.menubar .fa
+{  
+    margin-right:5px;
+}
+.header
+{
+width:1000px;
+padding-left:80px;
+margin-top:250px;
+margin-left: 100px;
+border:none;
+text-align: center;
+}
+.header h1
+{
+    user-select: none;
+    cursor: default;
+    font-size: 100px;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-weight:bold;
+    letter-spacing: 4px;
+    background:linear-gradient(rgb(240, 158, 8),white,rgb(11, 245, 11));
+    width:900px;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+}
+.read{
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 550px;
+    width: 160px;
+    background-color: rgba(224, 121, 202, 0.4);
+    border:1px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 35px;
+    padding-top: 3px;
+}
+.read a{
+    text-decoration: none;
+}
+.read h1{
+    text-align: center;
+    font-size: 22px;
+    color:black;
+    user-select: none;
+}
+.read:hover{
+    background-color: cyan;
+    
+}

@@ -1,0 +1,372 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=Courgette|OPen+Sans:400,800&display=swap');
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}body{
+    width: 100%;
+    background-image:url("taj4.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex; 
+}
+.menubar
+{
+    user-select: none;
+position:absolute;
+text-align:center; 
+margin-left:65%;
+margin-top: 20px;
+justify-content: center;
+height: 40px;
+}
+.menubar ul
+{
+display:inline-flex;
+list-style:none;
+font-size: 18px;
+}
+.menubar ul li
+{
+ cursor:pointer;
+ padding:10px;
+ font-family:monospace;
+ font-weight: bold;
+ text-shadow: 0 0 10px rgb(238, 197, 197),
+              0 0 20px rgb(148, 140, 140);
+}
+.menubar ul li a
+{
+    color: black;
+text-decoration:none;
+letter-spacing: 2px;
+}
+.menubar ul li a:hover{
+    color:white;   
+    padding-top: 5px;
+    text-shadow: 0 0 10px rgb(15, 8, 8),
+                 0 0 20px rgb(12, 11, 11);
+}
+.menubar .fa
+{  
+    margin-right:5px;
+}
+.header
+{
+width:1000px;
+padding-left:80px;
+margin-top:250px;
+margin-left: 100px;
+border:none;
+text-align: center;
+}
+.header h1
+{
+    user-select: none;
+    cursor: default;
+    font-size: 100px;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-weight:bold;
+    letter-spacing: 4px;
+    background:linear-gradient(rgb(240, 158, 8),white,rgb(11, 245, 11));
+    width:900px;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+}
+.read{
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 550px;
+    width: 160px;
+    background-color: rgba(224, 121, 202, 0.4);
+    border:1px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 35px;
+    padding-top: 3px;
+}
+.read a{
+    text-decoration: none;
+}
+.read h1{
+    text-align: center;
+    font-size: 22px;
+    color:black;
+    user-select: none;
+}
+.read:hover{
+    background-color: cyan;
+}
+
+
+
+
+
+
+body {
+  background:#ddd;
+  font-family:"Raleway";
+}
+.bottom-right {
+  position:absolute;
+  bottom:20px;
+  left:20px;
+}
+.bottom-right button
+{
+    padding:10px 20px;
+    background:#111;
+    color:#f5f5f5;
+    border:2px solid #111;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing: 1px;
+    outline:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition: all 300ms ease-in-out;
+
+}
+.center {
+  position:absolute;
+  top:50%;
+  left:11%;
+  transform:translate(-50%,-50%);
+}
+.popup {
+  width:250px;
+  height:180px;
+  padding:30px 20px;
+  background:transparent;
+  border-radius:10px;
+  border: 2px solid black;
+  box-sizing:border-box;
+  z-index:2;
+  text-align:center;
+  opacity:0;
+  top:-200%;
+  left: 32%;
+  transform:translate(-50%,-50%) scale(0.5);
+  transition: opacity 300ms ease-in-out,
+              top 1000ms ease-in-out,
+              transform 1000ms ease-in-out;
+}
+.popup.active {
+  opacity:1;
+  top:85%;
+  left: 32%;
+  transform:translate(-50%,-50%) scale(1);
+  transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+
+
+/*
+<div class="icon">
+          <i class="fa fa-check"></i>
+        </div>
+.popup .icon {
+  margin:5px 0px;
+  width:50px;
+  height:50px;
+  border:2px solid #34f234;
+  text-align:center;
+  display:inline-block;
+  border-radius:50%;
+  line-height:60px;
+}
+.popup .icon i.fa {
+  font-size:30px;
+  color:#34f234;
+} */
+.popup .title {
+  margin:5px 0px;
+  font-size:30px;
+  font-weight:600;
+  margin-top: -20px;
+}
+.popup .description 
+{
+  color:#222;
+  font-size:15px;
+  text-align: left;
+  font-weight: bold;
+  padding-top:10px;
+}
+.popup .description .fas
+{
+    color: gold;
+}
+.popup .dismiss-btn {
+  margin-top:15px;
+}
+.popup .dismiss-btn button {
+  padding:5px 10px;
+  background:#111;
+  color:#f5f5f5;
+  border:2px solid #111;
+  font-size:16px;
+  font-weight:600;
+  outline:none;
+  border-radius:50%;
+  cursor:pointer;
+  letter-spacing: 1px;
+  transition: all 300ms ease-in-out;
+}
+.popup .dismiss-btn button:hover {
+  color:#111;
+  background:#f5f5f5;
+}
+.popup > div {
+  position:relative;
+  top:10px;
+  opacity:0;
+}
+.popup.active > div {
+  top:0px;
+  opacity:1;
+}
+.popup.active .title {
+  transition: all 300ms ease-in-out 300ms;
+}
+.popup.active .description {
+  transition: all 300ms ease-in-out 350ms;
+}
+.popup.active .dismiss-btn {
+  transition: all 300ms ease-in-out 400ms;
+}
+
+
+
+
+
+
+
+
+.bottom-right1 {
+  position:absolute;
+  bottom:80px;
+  left:20px;
+}
+.bottom-right1 button
+{
+    padding:10px 20px;
+    background:#111;
+    color:#f5f5f5;
+    border:2px solid #111;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing: 1px;
+    outline:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition: all 300ms ease-in-out;
+
+}
+.center1 {
+  position:absolute;
+  top:60%;
+  left:11%;
+  transform:translate(-50%,-50%);
+}
+.popup1 {
+  width:250px;
+  height:180px;
+  padding:30px 20px;
+  background:transparent;
+  border-radius:10px;
+  border: 2px solid black;
+  box-sizing:border-box;
+  z-index:2;
+  text-align:center;
+  opacity:0;
+  top:-200%;
+  transform:translate(-50%,-50%) scale(0.5);
+  transition: opacity 300ms ease-in-out,
+              top 1000ms ease-in-out,
+              transform 1000ms ease-in-out;
+}
+.popup1.active {
+  opacity:1;
+  top:65%;
+  transform:translate(-50%,-50%) scale(1);
+  transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+
+
+/*
+<div class="icon">
+          <i class="fa fa-check"></i>
+        </div>
+.popup .icon {
+  margin:5px 0px;
+  width:50px;
+  height:50px;
+  border:2px solid #34f234;
+  text-align:center;
+  display:inline-block;
+  border-radius:50%;
+  line-height:60px;
+}
+.popup .icon i.fa {
+  font-size:30px;
+  color:#34f234;
+} */
+.popup1 .title1 {
+  margin:5px 0px;
+  font-size:30px;
+  font-weight:600;
+  margin-top: -20px;
+}
+.popup1 .description1 
+{
+  color:#222;
+  font-size:15px;
+  text-align: left;
+  font-weight: bold;
+  padding-top:10px;
+}
+.popup1 .description1 .fas
+{
+    color: gold;
+}
+.popup1 .dismiss-btn1 {
+  margin-top:15px;
+}
+.popup1 .dismiss-btn1 button {
+  padding:10px 20px;
+  background:#111;
+  color:#f5f5f5;
+  border:2px solid #111;
+  font-size:16px;
+  font-weight:600;
+  outline:none;
+  border-radius:10px;
+  cursor:pointer;
+  letter-spacing: 1px;
+  transition: all 300ms ease-in-out;
+}
+.popup1 .dismiss-btn1 button:hover {
+  color:#111;
+  background:#f5f5f5;
+}
+.popup1 > div {
+  position:relative;
+  top:10px;
+  opacity:0;
+}
+.popup1.active > div {
+  top:0px;
+  opacity:1;
+}
+.popup1.active .title {
+  transition: all 300ms ease-in-out 300ms;
+}
+.popup1.active .description1 {
+  transition: all 300ms ease-in-out 350ms;
+}
+.popup1.active .dismiss-btn1 {
+  transition: all 300ms ease-in-out 400ms;
+}

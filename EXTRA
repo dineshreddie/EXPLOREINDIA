@@ -1,0 +1,47 @@
+ <div class="input">
+             <input type="text" placeholder=" Search..." id="search">
+        </div>
+        <div class="btn1">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="btn2">
+            <i class="fas fa-microphone"></i>
+        </div>
+
+
+
+        .input,#search{
+    font-family: cursive;
+    color:#000;
+    height: 40px;
+    justify-content:left;
+    padding-right:430px;
+    border-radius:15px;
+    border-color: #a4fc02;
+    margin-top:-35px;
+    font-weight: bold;
+    margin-left: 180px;
+    text-transform: uppercase;
+    outline: #000;
+}
+.btn1{
+    display: inline-block;
+    margin-left:945px;
+    margin-top:-60px;
+    height:25px;
+    width:30px;
+    cursor: pointer;
+}
+.btn2{
+    margin-left:905px;
+    margin-top:-60px;
+    height:25px;
+    width:30px;
+    color:#123456;
+    cursor: pointer;
+    outline: #000;
+}
+.btn2:hover
+{
+
+}

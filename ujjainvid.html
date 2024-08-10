@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>https://ujjain/video.html</title>
+        <link rel="stylesheet" href="tajvid.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="back">
+            <a href="ujjain.html"><h2 title="back">< Back</h2></a>
+          </div>
+        <div class="container">
+            <div class="home">
+            <div class="flow">
+                <h1>UJJAIN</h1>
+                <h1>UJJAIN</h1>
+                <h3><i class="fas fa-soap"> Video clips</i></h3>
+            </div>
+    
+            <div class="vidc">
+                <video src="VID3.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+        </div>
+           <div class="vid-c">
+               <div class="vid">
+                   <video title="click to watch" src="vi1.mp4" muted></video>
+               </div>
+               <div class="vid">
+                <video title="click to watch" src="vi2.mp4" muted></video>
+            </div>
+            <div class="vid">
+                <video title="click to watch" src="vi3.mp4" muted></video>
+            </div>
+            <div class="vid">
+                <video title="click to watch" src="vi4.mp4" muted></video>
+            </div>
+            <div class="vid">
+                <video title="click to watch" src="vi5.mp4" muted></video>
+            </div>
+            <div class="vid">
+                <video title="click to watch" src="vi6.mp4" muted></video>
+            </div>
+        </div>
+        <script>
+            var video=document.querySelectorAll('video')
+            video.forEach(play=>play.addEventListener('click',() => {
+                play.classList.toggle('active');
+                if(play.paused){
+                    play.play();
+                }else{
+                    play.pause();
+                    play.currentTime=0;
+                }
+            }));
+        </script>
+    </body>
+    </html>

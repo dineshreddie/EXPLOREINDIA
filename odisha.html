@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>www.odisha.com</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiperbmn.css">      
+    <link rel="stylesheet" href="TELANGANA.CSS">
+</head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slideimg">
+                <img src="yadadri.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Konark</h1>
+                <p>famous as Sun temple</p>
+                <a href="tajmahal.html">SeeMore</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slideimg">
+                <img src="tpillar.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Cuttack</h1>
+                <p>Cultural capital of Odisa</p>
+                <a href="#">SeeMore</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slideimg">
+                <img src="img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Chilika Lake</h1>
+                <p>Asia's largest Salt lake</p>
+                <a href="#">SeeMore</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slideimg">
+                <img src="charminar.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Sri Jagannathpuri</h1>
+                <p>Built by King Indrayumna</p>
+                <a href="#">SeeMore</a>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="swiperbmn.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

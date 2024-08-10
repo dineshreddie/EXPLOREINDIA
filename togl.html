@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="togl.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="cb">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+            <p>hello</p>
+        </div>
+    </body>
+    <script>
+const chk = document.getElementById('chk');
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+    </script>
+</html>

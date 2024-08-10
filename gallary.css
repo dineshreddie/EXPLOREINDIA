@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    background-image: linear-gradient(45deg,rgba(126, 238, 74, 0.4),rgba(58, 144, 231, 0.4));
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    color: forestgreen;
+    margin: 30px 0 30px;
+}
+.gallary{
+    width: 350px;
+    height: 250px;
+    position:relative;
+}
+.gallary .front,
+.gallary .back{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background:white;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163,61,21,0.200),rgba(115,55,212,0.200);
+    transition: transform .4s;
+}
+.gallary .back{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+.gallary .back p{
+    margin: 10px 20px;
+    text-align: center;
+}
+.gallary .front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 20px 20px;
+    position:absolute;
+}
+.gallary:hover .front{
+    transform: perspective(800px) rotateX(180deg);
+}
+.gallary:hover .back{
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0);
+}

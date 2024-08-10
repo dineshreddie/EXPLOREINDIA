@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>www.contactform.com</title>
+        <link rel="stylesheet" href="feedback.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="flow">
+            <h1>feedback</h1>
+            <h1>feedback</h1>
+        </div>
+        <div class="home">
+            <div class="vidc">
+                <video src="VID3.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+        </div>
+        <div class="menubar">
+            <ul>
+                <li><a href="INDEX.HTML" target="_self"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="help.html" target="_self"><i class="fas fa-question-circle"></i>Help</a></li>
+                <li><a  href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+            </ul>
+        </div>
+        <div class="bg">
+            <FORM action="feedback.php" method="post">
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name"  required>
+                        <label for="name"><i class="fas fa-user"></i> YOUR NAME</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="number" name="phone_num" required>
+                        <label for="number"><i class="fas fa-phone-square-alt"></i> phone number</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="mail" name="mail" required>
+                    <label for="mail"><i class="fas fa-envelope"></i> E-mail ID</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="mssg" rows="8" name="comment" required></textarea>
+                    <label for="mssg"><i class="fas fa-comments"></i> Feedback</label>
+                </div>
+                <button type="submit">SUBMIT<i class="fas fa-paper-plane"></i> </button>
+            </FORM>
+        </div>
+    </body>
+</html>

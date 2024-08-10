@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background: #f8ae69;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 700;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #013613;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: rgb(0, 0, 0);
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: rgb(19, 128, 172);
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+/*infotext*/
+.infot
+{
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.det{
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;  
+}
+
+.det details summary
+{
+  font-weight: 500;
+  padding: 10px;
+  border-bottom: 1px solid rgb(112, 111, 111);
+  user-select: none;
+}
+.det details p{
+  margin: 10px;
+}
+.btns{
+  height:120px;
+  width: 100%;
+  background-color: #111;
+  user-select: none;
+}
+.btns h1{
+  cursor: default;
+  user-select: none;
+  color:#fff;
+  position: absolute;
+  left: 40%;
+  margin-top:1%;
+  letter-spacing: 3px;
+}
+.btns .btn{
+  position:relative;
+  left: 38%;
+  font-size: 28px;
+  color: #fff;
+  margin: 5px;
+  top: 45%;
+}
